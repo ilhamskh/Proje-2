@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#navbar {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    height: 70px;
+}
+
+#navbar ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+#navbar ul li{
+    display: inline-block;
+}
+
+#navbar ul li a{
+    padding: 0.75rem;
+}
+
+#navbar ul li a:hover{
+    color: #33ffff;
+    border-radius: 6px;
+    box-shadow: 0 0 5px #33ffff,
+                0 0 5px #66ffff;;
+}
+
+
+#navbar ul ul{
+    background-color: #161616;
+    position: absolute;
+    top: 90px;
+    border-top: 3px solid #33ffff;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#navbar ul li:hover > ul{
+    top: 60px;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+#navbar ul ul li a{
+    line-height: 50px;
+}
+
+#navbar ul ul li a:hover {
+    box-shadow: none;
+    color: #33ffff;
+}
+
+/* Home Section */
+
+#digital-home{
+    max-width: 30%;
+    height: auto;
+    border-radius: 100%;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-bottom: 1px solid gray;
+}
+
+#home .name {
+    text-align: center;
+}
+
+#home .name h2{
+    margin-bottom: 0.75rem;
+}
+
+#home .name p{
+    opacity: 0.6;
+    font-style: italic;
+}
+
+/* Infos */
+
+#infos{
+    color: white;
+    padding: 1rem;
+}
+
+#infos .items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#infos .items .item {
+    width: 33%;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+#infos .items .item:hover{
+    font-size: 1.2rem;
+}
+
+/* Services */
+
+.service-image{
+    max-width: 20%;
+    height: auto;
+}
+
+#service-image{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#services{
+    color: #161616;
+    padding: 1rem;
+}
+
+.services{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.services .service {
+    display: flex;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.services .service .service-image{
+    margin-right: 0.5rem;
+    position: relative;
+}
+
+.services .service .service-image img{
+    border-radius: 5px;
+}
+
+.services .service .service-image span{
+    background-color: #910000;
+    padding: 0.5rem;
+    color: white;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.services .service .service-info .title{
+    letter-spacing: 0.8px;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.services .service .service-info .description{
+    font-style: italic;
+    opacity: 0.8;
+}
+
+/* Contact */
+
+#contact {
+    color: white;
+    padding: 1rem;
+}
+
+#contact .contact-form{
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}

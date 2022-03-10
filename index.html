@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proje 2</title>
+    <meta name="description" content="DigitalShop | Sizin Shop">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css" integrity="sha512-8Vtie9oRR62i7vkmVUISvuwOeipGv8Jd+Sur/ORKDD5JiLgTGeBSkI3ISOhc730VGvA5VVQPwKIKlmi+zMZ71w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="CSS/global.css">
+    <link rel="stylesheet" href="CSS/main.css">
+
+    <!--Tablet-->
+    <link rel="stylesheet" media="(max-width:768px)" href="CSS/tablet.css">
+
+    <!--Mobile-->
+    <link rel="stylesheet" media="(max-width:500px)" href="CSS/mobile.css">
+
+</head>
+<body> 
+    <header class="dark">
+        <div class="container">
+        <nav id="navbar">
+            <h1 class="head-1" id="logo">DigitalShop</h1>
+            <ul>
+                <li><a href="#">Ana Səhifə</a></li>
+                <li>
+                    <a href="#">Servislər</a>
+                    <ul>
+                        <li><a href="#">Netflix</a></li>
+                        <li><a href="#">Spotify</a></li>
+                        <li><a href="#">Exxen</a></li>
+                        <li><a href="#">Steam Key</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Haqqımızda</a></li>
+                <li><a href="#">Dəstək</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+
+    <section id = "home">
+        <img src="assets/digital-home.jpg" alt="Digital Market" id="digital-home">
+
+        <div class="name">
+            <h2 class="head-3">Digital Servis Satışı</h2>
+            <p>Yüksək keyfiyyətli servislər kiçik kəmiyyətlərdə!</p>
+        </div>
+
+        <a href="#services" class="button-1">Servislərimiz</a>
+    </section>
+
+    <section id="infos" class="dark">
+        <h3 class="text-center head-2">Haqqımızda</h3>
+        <div class="items">
+            <article class="item">
+                <i class="fa-solid fa-shield"></i>
+                <h3>100% Zəmanət</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, beatae.</p>
+
+            </article>
+
+            <article class="item">
+                <i class="fa fa-pencil-alt"></i>
+                <h3>100% Müştəri Məmnuniyyəti</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, beatae.</p>
+
+            </article>
+
+            <article class="item">
+                <i class="fa-solid fa-phone"></i>
+                <h3>7/24 Dəstək</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, beatae.</p>
+
+            </article>
+            
+        </div>
+    </section>
+
+    <section id="services">
+        <h3 class="text-center head-2">Servislərimiz</h3>
+        <div class="container">
+            <div class="services">
+
+                <!--Service 1-->
+                <div class="service">
+                    <div class="service-image">
+                        <img src="assets/netflix.png" alt="netflix" id="service-image">
+                        <span>4 AZN</span>
+                    </div>
+
+                    <div class="service-info">
+                        <div class="title">
+                            Netflix - 1 Aylıq
+                        </div>
+
+                        <div class="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis consectetur consequatur nesciunt vitae veniam distinctio iusto aperiam, exercitationem voluptatum quis.
+                        </div>
+                    </div>
+                </div>
+
+                <!--Service 2-->
+                <div class="service">
+                    <div class="service-image">
+                        <img src="assets/spotify.png" alt="spotify" id="service-image">
+                        <span>3 AZN</span>
+                    </div>
+
+                    <div class="service-info">
+                        <div class="title">
+                            Spotify - 1 Aylıq
+                        </div>
+
+                        <div class="description">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio dolorem quasi alias quia animi eius iste. Laudantium modi veniam eum!
+                        </div>
+                    </div>
+                </div>
+
+                <!--Service 3-->
+                <div class="service">
+                    <div class="service-image">
+                        <img src="assets/exxen.png" alt="exxen" id="service-image">
+                        <span>6 AZN</span>
+                    </div>
+
+                    <div class="service-info">
+                        <div class="title">
+                            Exxen - 1 Aylıq
+                        </div>
+
+                        <div class="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit aut voluptates accusantium nesciunt perferendis voluptatibus alias facere autem quia ea?
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="dark">
+        <div class="contact-form">
+            <form action="">
+                <h4 class="text-center head-2">Dəstək Bölməsi</h4>
+                <div class="form-group">
+                    <label for="name">Ad</label>
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Adınızı qeyd edin">
+                </div>
+
+                <div class="form-group">
+                    <label for="ümail">Elektron Poçt Ünvanınız</label>
+                    <input type="text" class="form-control" name="email" id="email" placeholder="Email qeyd edin">
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Ad</label>
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Adınızı qeyd edin">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Mesaj bölməsi</label>
+                    <textarea name="message" id="message" class="form-control" rows="5" placeholder="Mesajınızı qeyd edin"></textarea>
+                </div>
+
+                <button type="submit" class="button-1 button-width">Göndər</button>
+            </form>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/dbb71981aa.js" crossorigin="anonymous"></script>
+</body>
+</html>
